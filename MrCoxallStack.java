@@ -21,6 +21,9 @@ public class MrCoxallStack {
    * @return stackAsList
    */
   public List<String> getStack() {
+    if (stackAsList.size() == 0) {
+      stackAsList.add("Nothing in the list!");
+    }
     return stackAsList;
   }
 
@@ -61,5 +64,13 @@ public class MrCoxallStack {
       peekNumber = "Nothing in the list!";
     }
     return peekNumber;
+  }
+
+  /**
+   * The clear() setter, clear all the items in the list.
+   *
+   */
+  public void clear() {
+    stackAsList.clear();
   }
 }

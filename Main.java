@@ -66,6 +66,9 @@ final class Main {
         System.out.println("\nNow the number on the top is " + peekNumber);
       }
       System.out.println("The list is " + newStack.getStack());
+      System.out.println("\nNow clear the list");
+      newStack.clear();
+      System.out.println(newStack.getStack());
     } catch (Exception e) {
       System.out.println("Invalid number!");
     } finally {
